@@ -23,14 +23,6 @@ engine internals through DX12 hooking and memory analysis.
   Command queue identified via swap chain internal offset to avoid a race 
   condition where multiple queues signal before the correct one is known.
 
-## Structure
-
-- `hitman-3-wip/` — main project source
-  - `hooks.cpp` — DX12 hook, ImGui init, present detour
-  - `utils.h` — engine utilities, component lookup, encrypted field wrapper
-  - `drawing.cpp` — ImGui overlay rendering
-  - `Menu.cpp` — debug overlay with live memory inspection
-
 ## Notes
 
 Singleplayer only. Built for research purposes — understanding engine 
